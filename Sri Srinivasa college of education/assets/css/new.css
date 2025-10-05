@@ -1,0 +1,15 @@
+#header {
+  height: 130px;              /* make header taller */
+  padding: 10px 0;            /* add breathing space */
+  align-items: center;        /* vertical align */
+}
+#header .logo img {
+  height: 120px !important;   /* force logo size */
+  width: auto !important;     /* keep proportions */
+  max-height: none !important;/* override Bootstrap limit */
+}
+#header .sitename {
+  font-size: 26px;  
+  margin-left: 15px;
+  line-height: 1.2;
+}
