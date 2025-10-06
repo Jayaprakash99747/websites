@@ -4,18 +4,20 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>About - Learner Bootstrap Template</title>
+  <title> Sri Srinivasa college of education</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/logo.png" rel="icon">
+  <link href="assets/logo.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,7 +27,6 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-  <link href="assets/css/new.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Learner
@@ -34,35 +35,105 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/new.css" rel="stylesheet">
+  <style>
+    .number::after {
+      content: "%";
+      margin-left: 2px;
+    }
+  </style>
 </head>
 
-<body class="about-page">
+<body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+  <!-- Header -->
+  <header id="header" class="header sticky-top shadow-sm">
+    <div class="container-xl d-flex align-items-center justify-content-between py-2">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-         <img src="assets/logo.png" alt="" style="height:120px; width:auto;">
-        <h1 class="sitename">Sri Srinivasa college of education</h1>
+      <!-- Logo + College Name -->
+      <a href="index.html" class="d-flex align-items-center text-decoration-none">
+        <img src="assets/logo.png" alt="Logo" class="rounded-circle" style="height:60px; width:60px; object-fit:cover;">
+        <div class="ms-2 text-start">
+          <h1 class="mb-0" style="font-size:18px; font-weight:bold;">SRI SRINIVASA COLLEGE</h1>
+          <h2 class="mb-0" style="font-size:14px; font-weight:normal;">OF EDUCATION</h2>
+        </div>
       </a>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li class="menu-item current-menu-item"><a href="index.html">Home</a> </li>
-                  <li class="menu-item"><a href="about.html">About</a></li>
-                  <li class="menu-item"><a href="blog-details.html">Facilities</a></li>
-                  <li class="menu-item"><a href="courses.html"> Courses </a></li>
-                  <li class="menu-item"><a href="enroll.html">Admissions</a></li>
-                  <li class="menu-item"><a href="instructors.html">Staff</a> </li>
-                  <!-- <li class="menu-item"><a href="#">NCTE Info.</a> </li> -->
-                  <li class="menu-item"><a href="blog.html">Gallery</a> </li>
-                  <li class="menu-item"><a href="Contact.html">Contact</a></li>
+      <!-- Desktop Navigation -->
+      <nav class="d-none d-lg-block">
+        <ul class="d-flex list-unstyled mb-0 gap-4">
+          <li><a href="index.html" class="text-white fw-semibold fs-6">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white fw-semibold fs-6" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu" style="background-color:#007bff;">
+              <li><a class="dropdown-item" href="about.html" style="background-color:#007bff;">About Us</a>
+              </li>
+              <li><a class="dropdown-item" href="blog.html" style="background-color:#007bff;">Staff</a>
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="facilities.html" class="text-white fw-semibold fs-6">Facilities</a></li>
+          <li><a href="courses.html" class="text-white fw-semibold fs-6">Courses</a></li>
+          <li><a href="enroll.html" class="text-white fw-semibold fs-6">Admissions</a></li>
+          <li><a href="instructors.html" class="text-white fw-semibold fs-6">Staff</a></li>
+          <li><a href="blog.html" class="text-white fw-semibold fs-6">Gallery</a></li>
+          <li><a href="Contact.html" class="text-white fw-semibold fs-6">Contact</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-    </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="d-lg-none btn btn-outline-light" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+        <i class="bi bi-list" style="font-size:1.5rem;"></i>
+      </button>
+
+  
+
+<!-- Offcanvas Menu -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+  <div class="offcanvas-header bg-primary text-white">
+    <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"
+      style="filter: invert(1);"></button>
+  </div>
+
+  <div class="offcanvas-body p-3 bg-primary">
+    <ul class="list-unstyled mb-0" id="mobileAccordion">
+
+      <li class="mb-3"><a href="index.html" class="text-white fw-semibold fs-5 d-block">Home</a></li>
+
+      <!-- Collapsible About Submenu -->
+      <li class="mb-3">
+        <a class="text-white fw-semibold fs-5 d-flex justify-content-between align-items-center"
+          data-bs-toggle="collapse" href="#aboutSubmenu" role="button" aria-expanded="false"
+          aria-controls="aboutSubmenu">
+          About <i class="bi bi-chevron-down"></i>
+        </a>
+        <div class="collapse" id="aboutSubmenu">
+          <ul class="list-unstyled ps-3 mt-2">
+            <li><a href="about.html" class="text-white fw-semibold fs-6 d-block mb-1">About Us</a></li>
+            <li><a href="blog.html" class="text-white fw-semibold fs-6 d-block mb-1">Staff</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="mb-3"><a href="facilities.html" class="text-white fw-semibold fs-5 d-block">Facilities</a></li>
+      <li class="mb-3"><a href="courses.html" class="text-white fw-semibold fs-5 d-block">Courses</a></li>
+      <li class="mb-3"><a href="enroll.html" class="text-white fw-semibold fs-5 d-block">Admissions</a></li>
+      <li class="mb-3"><a href="instructors.html" class="text-white fw-semibold fs-5 d-block">Staff</a></li>
+      <li class="mb-3"><a href="blog.html" class="text-white fw-semibold fs-5 d-block">Gallery</a></li>
+      <li class="mb-3"><a href="Contact.html" class="text-white fw-semibold fs-5 d-block">Contact</a></li>
+
+    </ul>
+  </div>
+</div>
+
+
   </header>
 
   <main class="main">
@@ -83,101 +154,101 @@
     <!-- About Section -->
     <section id="about" class="about section">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row align-items-center">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/education/education-square-2.webp" alt="About Us" class="img-fluid rounded-4">
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="about-content">
-              <span class="subtitle">About Us</span>
-              <h2>Empowering Future Leaders Through Quality Education</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <div class="stats-row">
-                <div class="stats-item">
-                  <span class="count">15</span>
-                  <p>Years of Experience</p>
-                </div>
-                <div class="stats-item">
-                  <span class="count">200+</span>
-                  <p>Expert Instructors</p>
-                </div>
-                <div class="stats-item">
-                  <span class="count">50k+</span>
-                  <p>Students Worldwide</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mt-5 pt-4">
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="mission-card">
-              <div class="icon-box">
-                <i class="bi bi-bullseye"></i>
-              </div>
-              <h3>Our Mission</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Excepteur sint occaecat cupidatat non proident.</p>
-            </div>
-          </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="mission-card">
-              <div class="icon-box">
-                <i class="bi bi-eye"></i>
-              </div>
-              <h3>Our Vision</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Excepteur sint occaecat cupidatat non proident.</p>
-            </div>
-          </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="mission-card">
-              <div class="icon-box">
-                <i class="bi bi-award"></i>
-              </div>
-              <h3>Our Values</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Excepteur sint occaecat cupidatat non proident.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mt-5 pt-3 align-items-center">
-          <div class="col-lg-6 order-lg-2" data-aos="fade-up" data-aos-delay="300">
-            <div class="achievements">
-              <span class="subtitle">Why Choose Us</span>
-              <h2>Transforming Education for a Better Tomorrow</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-              <ul class="achievements-list">
-                <li><i class="bi bi-check-circle-fill"></i> Flexible learning options and schedules</li>
-                <li><i class="bi bi-check-circle-fill"></i> Industry-experienced instructors</li>
-                <li><i class="bi bi-check-circle-fill"></i> Interactive and engaging course content</li>
-                <li><i class="bi bi-check-circle-fill"></i> Career guidance and placement support</li>
-                <li><i class="bi bi-check-circle-fill"></i> State-of-the-art online learning platform</li>
-              </ul>
-              <a href="#" class="btn-explore">Discover More <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-          <div class="col-lg-6 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-            <div class="about-gallery">
-              <div class="row g-3">
-                <div class="col-6">
-                  <img src="assets/img/education/education-1.webp" alt="Campus Life" class="img-fluid rounded-3">
-                </div>
-                <div class="col-6">
-                  <img src="assets/img/education/students-3.webp" alt="Student Achievement" class="img-fluid rounded-3">
-                </div>
-                <div class="col-12 mt-3">
-                  <img src="assets/img/education/campus-8.webp" alt="Our Campus" class="img-fluid rounded-3">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
+    <div class="row align-items-center">
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <img src="assets/photos/img1.jpg" alt="Sri Srinivasa College of Education" class="img-fluid rounded-4">
       </div>
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="about-content">
+          <span class="subtitle">About Us</span>
+          <h2>Shaping Tomorrow’s Teachers Today</h2>
+          <p>Sri Srinivasa College of Education (B.Ed) is dedicated to nurturing future educators with the knowledge, skills, and values required to excel in the teaching profession. Affiliated to Acharya Nagarjuna University, we provide a dynamic learning environment where theory meets practical teaching experience, preparing students for real-world classrooms.</p>
+          <div class="stats-row">
+            <div class="stats-item">
+              <span class="count">10+</span>
+              <p>Years of Excellence</p>
+            </div>
+            <div class="stats-item">
+              <span class="count">50+</span>
+              <p>Experienced Faculty</p>
+            </div>
+            <div class="stats-item">
+              <span class="count">1000+</span>
+              <p>Graduated Teachers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    </section><!-- /About Section -->
+    <div class="row mt-5 pt-4">
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="mission-card">
+          <div class="icon-box">
+            <i class="bi bi-bullseye"></i>
+          </div>
+          <h3>Our Mission</h3>
+          <p>To equip aspiring teachers with innovative teaching methods, practical classroom experience, and ethical values for lifelong professional growth.</p>
+        </div>
+      </div>
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="mission-card">
+          <div class="icon-box">
+            <i class="bi bi-eye"></i>
+          </div>
+          <h3>Our Vision</h3>
+          <p>To be recognized as a premier B.Ed institution that produces competent, responsible, and socially conscious educators for schools nationwide.</p>
+        </div>
+      </div>
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="mission-card">
+          <div class="icon-box">
+            <i class="bi bi-award"></i>
+          </div>
+          <h3>Our Values</h3>
+          <p>Integrity, Excellence, Collaboration, Innovation, and Commitment to nurturing the next generation of teachers.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5 pt-3 align-items-center">
+      <div class="col-lg-6 order-lg-2" data-aos="fade-up" data-aos-delay="300">
+        <div class="achievements">
+          <span class="subtitle">Why Choose Us</span>
+          <h2>Dedicated to Teacher Education Excellence</h2>
+          <p>Sri Srinivasa College of Education focuses on holistic teacher development by combining theoretical knowledge with hands-on teaching experience, ensuring our graduates are classroom-ready.</p>
+          <ul class="achievements-list">
+            <li><i class="bi bi-check-circle-fill"></i>Comprehensive B.Ed curriculum covering modern pedagogy</li>
+            <li><i class="bi bi-check-circle-fill"></i>Experienced faculty with practical teaching experience</li>
+            <li><i class="bi bi-check-circle-fill"></i>State-of-the-art classrooms and teaching labs</li>
+            <li><i class="bi bi-check-circle-fill"></i>Internship and practical teaching opportunities in schools</li>
+            <li><i class="bi bi-check-circle-fill"></i>Focus on research, innovation, and educational ethics</li>
+          </ul>
+          <a href="index.html" class="btn-explore">Discover More <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-6 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+        <div class="about-gallery">
+          <div class="row g-3">
+            <div class="col-6">
+              <img src="assets/photos/25.jpg" alt="Campus Life" class="img-fluid rounded-3">
+            </div>
+            <div class="col-6">
+              <img src="assets/photos/26.jpg" alt="Students Learning" class="img-fluid rounded-3">
+            </div>
+            <div class="col-12 mt-3">
+              <img src="assets/photos/29.jpg" alt="Classroom Activities" class="img-fluid rounded-3">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
 
   </main>
 
