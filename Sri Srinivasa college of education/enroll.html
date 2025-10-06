@@ -4,18 +4,20 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Enroll - Learner Bootstrap Template</title>
+  <title> Sri Srinivasa college of education</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/logo.png" rel="icon">
+  <link href="assets/logo.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,7 +27,6 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-  <link href="assets/css/new.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Learner
@@ -34,35 +35,105 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/new.css" rel="stylesheet">
+  <style>
+    .number::after {
+      content: "%";
+      margin-left: 2px;
+    }
+  </style>
 </head>
 
-<body class="enroll-page">
+<body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+  <!-- Header -->
+  <header id="header" class="header sticky-top shadow-sm">
+    <div class="container-xl d-flex align-items-center justify-content-between py-2">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-         <img src="assets/logo.png" alt="" style="height:120px; width:auto;">
-        <h1 class="sitename">Sri Srinivasa college of education</h1>
+      <!-- Logo + College Name -->
+      <a href="index.html" class="d-flex align-items-center text-decoration-none">
+        <img src="assets/logo.png" alt="Logo" class="rounded-circle" style="height:60px; width:60px; object-fit:cover;">
+        <div class="ms-2 text-start">
+          <h1 class="mb-0" style="font-size:18px; font-weight:bold;">SRI SRINIVASA COLLEGE</h1>
+          <h2 class="mb-0" style="font-size:14px; font-weight:normal;">OF EDUCATION</h2>
+        </div>
       </a>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li class="menu-item current-menu-item"><a href="index.html">Home</a> </li>
-                  <li class="menu-item"><a href="about.html">About</a></li>
-                  <li class="menu-item"><a href="blog-details.html">Facilities</a></li>
-                  <li class="menu-item"><a href="courses.html"> Courses </a></li>
-                  <li class="menu-item"><a href="enroll.html">Admissions</a></li>
-                  <li class="menu-item"><a href="instructors.html">Staff</a> </li>
-                  <!-- <li class="menu-item"><a href="#">NCTE Info.</a> </li> -->
-                  <li class="menu-item"><a href="blog.html">Gallery</a> </li>
-                  <li class="menu-item"><a href="Contact.html">Contact</a></li>
+      <!-- Desktop Navigation -->
+      <nav class="d-none d-lg-block">
+        <ul class="d-flex list-unstyled mb-0 gap-4">
+          <li><a href="index.html" class="text-white fw-semibold fs-6">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white fw-semibold fs-6" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu" style="background-color:#007bff;">
+              <li><a class="dropdown-item" href="about.html" style="background-color:#007bff;">About Us</a>
+              </li>
+              <li><a class="dropdown-item" href="blog.html" style="background-color:#007bff;">Staff</a>
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="facilities.html" class="text-white fw-semibold fs-6">Facilities</a></li>
+          <li><a href="courses.html" class="text-white fw-semibold fs-6">Courses</a></li>
+          <li><a href="enroll.html" class="text-white fw-semibold fs-6">Admissions</a></li>
+          <li><a href="instructors.html" class="text-white fw-semibold fs-6">Staff</a></li>
+          <li><a href="blog.html" class="text-white fw-semibold fs-6">Gallery</a></li>
+          <li><a href="Contact.html" class="text-white fw-semibold fs-6">Contact</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-    </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="d-lg-none btn btn-outline-light" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+        <i class="bi bi-list" style="font-size:1.5rem;"></i>
+      </button>
+
+  
+
+<!-- Offcanvas Menu -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+  <div class="offcanvas-header bg-primary text-white">
+    <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"
+      style="filter: invert(1);"></button>
+  </div>
+
+  <div class="offcanvas-body p-3 bg-primary">
+    <ul class="list-unstyled mb-0" id="mobileAccordion">
+
+      <li class="mb-3"><a href="index.html" class="text-white fw-semibold fs-5 d-block">Home</a></li>
+
+      <!-- Collapsible About Submenu -->
+      <li class="mb-3">
+        <a class="text-white fw-semibold fs-5 d-flex justify-content-between align-items-center"
+          data-bs-toggle="collapse" href="#aboutSubmenu" role="button" aria-expanded="false"
+          aria-controls="aboutSubmenu">
+          About <i class="bi bi-chevron-down"></i>
+        </a>
+        <div class="collapse" id="aboutSubmenu">
+          <ul class="list-unstyled ps-3 mt-2">
+            <li><a href="about.html" class="text-white fw-semibold fs-6 d-block mb-1">About Us</a></li>
+            <li><a href="blog.html" class="text-white fw-semibold fs-6 d-block mb-1">Staff</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="mb-3"><a href="facilities.html" class="text-white fw-semibold fs-5 d-block">Facilities</a></li>
+      <li class="mb-3"><a href="courses.html" class="text-white fw-semibold fs-5 d-block">Courses</a></li>
+      <li class="mb-3"><a href="enroll.html" class="text-white fw-semibold fs-5 d-block">Admissions</a></li>
+      <li class="mb-3"><a href="instructors.html" class="text-white fw-semibold fs-5 d-block">Staff</a></li>
+      <li class="mb-3"><a href="blog.html" class="text-white fw-semibold fs-5 d-block">Gallery</a></li>
+      <li class="mb-3"><a href="Contact.html" class="text-white fw-semibold fs-5 d-block">Contact</a></li>
+
+    </ul>
+  </div>
+</div>
+
+
   </header>
 
   <main class="main">

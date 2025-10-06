@@ -4,18 +4,20 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Course Details - Learner Bootstrap Template</title>
+  <title> Sri Srinivasa college of education</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/logo.png" rel="icon">
+  <link href="assets/logo.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -33,64 +35,105 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/new.css" rel="stylesheet">
+  <style>
+    .number::after {
+      content: "%";
+      margin-left: 2px;
+    }
+  </style>
 </head>
 
-<body class="course-details-page">
+<body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+  <!-- Header -->
+  <header id="header" class="header sticky-top shadow-sm">
+    <div class="container-xl d-flex align-items-center justify-content-between py-2">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Learner</h1>
+      <!-- Logo + College Name -->
+      <a href="index.html" class="d-flex align-items-center text-decoration-none">
+        <img src="assets/logo.png" alt="Logo" class="rounded-circle" style="height:60px; width:60px; object-fit:cover;">
+        <div class="ms-2 text-start">
+          <h1 class="mb-0" style="font-size:18px; font-weight:bold;">SRI SRINIVASA COLLEGE</h1>
+          <h2 class="mb-0" style="font-size:14px; font-weight:normal;">OF EDUCATION</h2>
+        </div>
       </a>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="instructors.html">Instructors</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="course-details.html" class="active">Course Details</a></li>
-              <li><a href="instructor-profile.html">Instructor Profile</a></li>
-              <li><a href="events.html">Events</a></li>
-              <li><a href="blog-details.html">Blog Details</a></li>
-              <li><a href="terms.html">Terms</a></li>
-              <li><a href="privacy.html">Privacy</a></li>
-              <li><a href="404.html">404</a></li>
+      <!-- Desktop Navigation -->
+      <nav class="d-none d-lg-block">
+        <ul class="d-flex list-unstyled mb-0 gap-4">
+          <li><a href="index.html" class="text-white fw-semibold fs-6">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white fw-semibold fs-6" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu" style="background-color:#007bff;">
+              <li><a class="dropdown-item" href="about.html" style="background-color:#007bff;">About Us</a>
+              </li>
+              <li><a class="dropdown-item" href="blog.html" style="background-color:#007bff;">Staff</a>
+              </li>
             </ul>
           </li>
 
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="facilities.html" class="text-white fw-semibold fs-6">Facilities</a></li>
+          <li><a href="courses.html" class="text-white fw-semibold fs-6">Courses</a></li>
+          <li><a href="enroll.html" class="text-white fw-semibold fs-6">Admissions</a></li>
+          <li><a href="instructors.html" class="text-white fw-semibold fs-6">Staff</a></li>
+          <li><a href="blog.html" class="text-white fw-semibold fs-6">Gallery</a></li>
+          <li><a href="Contact.html" class="text-white fw-semibold fs-6">Contact</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="enroll.html">Enroll Now</a>
+      <!-- Mobile Menu Button -->
+      <button class="d-lg-none btn btn-outline-light" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+        <i class="bi bi-list" style="font-size:1.5rem;"></i>
+      </button>
 
-    </div>
+  
+
+<!-- Offcanvas Menu -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+  <div class="offcanvas-header bg-primary text-white">
+    <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"
+      style="filter: invert(1);"></button>
+  </div>
+
+  <div class="offcanvas-body p-3 bg-primary">
+    <ul class="list-unstyled mb-0" id="mobileAccordion">
+
+      <li class="mb-3"><a href="index.html" class="text-white fw-semibold fs-5 d-block">Home</a></li>
+
+      <!-- Collapsible About Submenu -->
+      <li class="mb-3">
+        <a class="text-white fw-semibold fs-5 d-flex justify-content-between align-items-center"
+          data-bs-toggle="collapse" href="#aboutSubmenu" role="button" aria-expanded="false"
+          aria-controls="aboutSubmenu">
+          About <i class="bi bi-chevron-down"></i>
+        </a>
+        <div class="collapse" id="aboutSubmenu">
+          <ul class="list-unstyled ps-3 mt-2">
+            <li><a href="about.html" class="text-white fw-semibold fs-6 d-block mb-1">About Us</a></li>
+            <li><a href="blog.html" class="text-white fw-semibold fs-6 d-block mb-1">Staff</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="mb-3"><a href="facilities.html" class="text-white fw-semibold fs-5 d-block">Facilities</a></li>
+      <li class="mb-3"><a href="courses.html" class="text-white fw-semibold fs-5 d-block">Courses</a></li>
+      <li class="mb-3"><a href="enroll.html" class="text-white fw-semibold fs-5 d-block">Admissions</a></li>
+      <li class="mb-3"><a href="instructors.html" class="text-white fw-semibold fs-5 d-block">Staff</a></li>
+      <li class="mb-3"><a href="blog.html" class="text-white fw-semibold fs-5 d-block">Gallery</a></li>
+      <li class="mb-3"><a href="Contact.html" class="text-white fw-semibold fs-5 d-block">Contact</a></li>
+
+    </ul>
+  </div>
+</div>
+
+
   </header>
 
   <main class="main">
@@ -426,112 +469,7 @@
 
           </div>
 
-          <div class="col-lg-4">
-
-            <!-- Enrollment Card -->
-            <div class="enrollment-card" data-aos="fade-up" data-aos-delay="200">
-
-              <div class="card-header">
-                <div class="price-display">
-                  <span class="current-price">$149</span>
-                  <span class="original-price">$249</span>
-                  <span class="discount">40% OFF</span>
-                </div>
-                <div class="enrollment-count">
-                  <i class="bi bi-people"></i>
-                  <span>3,892 students enrolled</span>
-                </div>
-              </div>
-
-              <div class="card-body">
-                <div class="course-highlights">
-                  <div class="highlight-item">
-                    <i class="bi bi-trophy"></i>
-                    <span>Certificate included</span>
-                  </div>
-                  <div class="highlight-item">
-                    <i class="bi bi-clock-history"></i>
-                    <span>45 hours content</span>
-                  </div>
-                  <div class="highlight-item">
-                    <i class="bi bi-download"></i>
-                    <span>Downloadable resources</span>
-                  </div>
-                  <div class="highlight-item">
-                    <i class="bi bi-infinity"></i>
-                    <span>Lifetime access</span>
-                  </div>
-                  <div class="highlight-item">
-                    <i class="bi bi-phone"></i>
-                    <span>Mobile access</span>
-                  </div>
-                </div>
-
-                <div class="action-buttons">
-                  <button class="btn-primary">Enroll Now</button>
-                  <button class="btn-secondary">Add to Wishlist</button>
-                </div>
-
-                <div class="guarantee">
-                  <i class="bi bi-shield-check"></i>
-                  <span>30-day money-back guarantee</span>
-                </div>
-              </div>
-
-            </div><!-- End Enrollment Card -->
-
-            <!-- Course Details -->
-            <div class="course-details-card" data-aos="fade-up" data-aos-delay="300">
-              <h4>Course Details</h4>
-
-              <div class="detail-grid">
-                <div class="detail-row">
-                  <span class="detail-label">Duration</span>
-                  <span class="detail-value">16 weeks</span>
-                </div>
-                <div class="detail-row">
-                  <span class="detail-label">Skill Level</span>
-                  <span class="detail-value">Intermediate</span>
-                </div>
-                <div class="detail-row">
-                  <span class="detail-label">Language</span>
-                  <span class="detail-value">English</span>
-                </div>
-                <div class="detail-row">
-                  <span class="detail-label">Quizzes</span>
-                  <span class="detail-value">24</span>
-                </div>
-                <div class="detail-row">
-                  <span class="detail-label">Assignments</span>
-                  <span class="detail-value">8 projects</span>
-                </div>
-                <div class="detail-row">
-                  <span class="detail-label">Updated</span>
-                  <span class="detail-value">December 2024</span>
-                </div>
-              </div>
-            </div><!-- End Course Details -->
-
-            <!-- Share Course -->
-            <div class="share-course-card" data-aos="fade-up" data-aos-delay="400">
-              <h4>Share This Course</h4>
-              <div class="social-links">
-                <a href="#" class="social-link facebook">
-                  <i class="bi bi-facebook"></i>
-                </a>
-                <a href="#" class="social-link twitter">
-                  <i class="bi bi-twitter"></i>
-                </a>
-                <a href="#" class="social-link linkedin">
-                  <i class="bi bi-linkedin"></i>
-                </a>
-                <a href="#" class="social-link email">
-                  <i class="bi bi-envelope"></i>
-                </a>
-              </div>
-            </div><!-- End Share Course -->
-
-          </div>
+          
 
         </div>
 
