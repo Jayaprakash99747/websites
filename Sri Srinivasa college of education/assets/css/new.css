@@ -13,3 +13,31 @@
   margin-left: 15px;
   line-height: 1.2;
 }
+.contact-info {
+  text-align: left;   /* align neatly with links */
+  padding: 0 0;
+}
+
+.info-box {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.info-box .icon {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 20px;
+  text-align: center;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.info-box h4 {
+  display: inline-block;
+  font-weight: bold;
+  margin: 0 0 5px 5px;
+}
