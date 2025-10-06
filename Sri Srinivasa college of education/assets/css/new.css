@@ -1,15 +1,59 @@
-#header {
-  height: 130px;              /* make header taller */
-  padding: 10px 0;            /* add breathing space */
-  align-items: center;        /* vertical align */
+header.header {
+  background-color: #007bff !important;
+  color: #fff !important;
 }
-#header .logo img {
-  height: 120px !important;   /* force logo size */
-  width: auto !important;     /* keep proportions */
-  max-height: none !important;/* override Bootstrap limit */
+
+header.header a {
+  color: #fff !important;
+  text-decoration: none;
 }
-#header .sitename {
-  font-size: 26px;  
-  margin-left: 15px;
-  line-height: 1.2;
+
+header.header a:hover {
+  color: #ffd700 !important;
 }
+
+header.header .container-xl {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* Make offcanvas height auto (fits content) */
+.offcanvas-end {
+    height: auto !important;    /* only as tall as content */
+    max-height: 90vh;           /* optional: don’t exceed 90% of viewport */
+}
+
+/* Add spacing inside menu */
+.offcanvas-body {
+    padding: 1.5rem;
+}
+
+/* Bigger list items for mobile */
+.offcanvas-body ul li a {
+    font-size: 1.25rem; /* increase font size */
+}
+/* ---------------------------------------------- */
+/* <!-- Custom CSS for slide animations --> */
+
+/* Remove any gap under header */
+.carousel-section {
+  margin-top: 0;
+  padding: 0;
+}
+
+/* Make carousel full width and height */
+.carousel-section .carousel,
+.carousel-section .carousel-inner,
+.carousel-section .carousel-item img {
+  width: 100vw;
+  height: 80vh; /* fixed height for uniform look */
+  object-fit: cover;
+}
+
+/* Remove carousel controls completely */
+.carousel-control-prev,
+.carousel-control-next,
+.carousel-indicators {
+  display: none;
+}
+
